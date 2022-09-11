@@ -7,8 +7,8 @@ import AppContext from './context'
 import Home from './pages/Home'
 import Favorites from './pages/Favorites'
 import Orders from './pages/Orders'
-import React, { useRef, useEffect } from 'react'
-import { gsap } from 'gsap' 
+import React from 'react'
+// import { gsap } from 'gsap' 
 import Swiper from './components/Swiper'
 
 const App = () => {
