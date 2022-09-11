@@ -1,0 +1,12 @@
+.footer {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  padding: 15px 100px;
+  box-sizing: border-box;
+  .footer_df {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+  }
+}
