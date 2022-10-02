@@ -62,7 +62,6 @@ const App = () => {
         console.error(error)
       }
     }
-
     fetchData()
   }, [])
 
@@ -151,7 +150,6 @@ const App = () => {
           onRemove={onRemoveItem}
           opened={cartOpened}
         />
-        <Swiper />
         <Routes>
         <Route path="/" exact element={ <Home
             items={items}

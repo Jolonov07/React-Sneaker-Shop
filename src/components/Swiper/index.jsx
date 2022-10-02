@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Autoplay } from 'swiper'
 import 'swiper/css'
@@ -13,50 +13,50 @@ import imgss from './sneakers/5.jpg'
 import imgsss from './sneakers/3.jpg'
 
 function createSlide() {
-  return (
-    <SwiperSlide className={style.swipe}>
-      <img className={style.img} src={img} alt="Slider" />
-    </SwiperSlide>
-  )
+	return (
+		<SwiperSlide className={style.swipe}>
+			<img className={style.img} src={img} alt='Slider' />
+		</SwiperSlide>
+	)
 }
 
 function createSlide2() {
-  return (
-    <SwiperSlide className={style.swipe}>
-      <img className={style.img} src={imgs} alt="Slider" />
-    </SwiperSlide>
-  )
+	return (
+		<SwiperSlide className={style.swipe}>
+			<img className={style.img} src={imgs} alt='Slider' />
+		</SwiperSlide>
+	)
 }
 
 function createSlide3() {
-  return (
-    <SwiperSlide className={style.swipe}>
-      <img className={style.img} src={imgss} alt="Slider" />
-    </SwiperSlide>
-  )
+	return (
+		<SwiperSlide className={style.swipe}>
+			<img className={style.img} src={imgss} alt='Slider' />
+		</SwiperSlide>
+	)
 }
 
 function createSlide4() {
-  return (
-    <SwiperSlide className={style.swipe}>
-      <img className={style.img} src={imgsss} alt="Slider" />
-    </SwiperSlide>
-  )
+	return (
+		<SwiperSlide className={style.swipe}>
+			<img className={style.img} src={imgsss} alt='Slider' />
+		</SwiperSlide>
+	)
 }
 
 export default () => {
-  return (
-    <Swiper
-      modules={[Navigation, Pagination, Autoplay]}
-      slidesPerView={1}
-      // navigation
-      autoplay={{ delay: 3000 }}
-      pagination={{ clickable: true }}
-    >
-      {createSlide()}
-      {createSlide2()}
-      {createSlide3()}
-      {createSlide4()}
-    </Swiper>
-  )
+	return (
+		<Swiper
+			modules={[Navigation, Pagination, Autoplay]}
+			slidesPerView={1}
+			// navigation
+			autoplay={{ delay: 3000 }}
+			pagination={{ clickable: true }}
+		>
+			{createSlide()}
+			{createSlide2()}
+			{createSlide3()}
+			{createSlide4()}
+		</Swiper>
+	)
 }
