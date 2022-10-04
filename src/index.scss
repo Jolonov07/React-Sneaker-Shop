@@ -16,9 +16,6 @@ body,
 	scroll-behavior: smooth;
 }
 .wrapper {
-	&::before {
-		filter: blur(5px);
-	}
 	background-size: cover;
 	background: #ffffff;
 	box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
@@ -26,6 +23,7 @@ body,
 	border-radius: 20px;
 	width: 1300px;
 	margin: 50px auto;
+	padding: 10px 0 0 0;
 	.cursor-react {
 		position: absolute;
 		width: 25px;
@@ -49,13 +47,16 @@ body,
 
 header {
 	position: sticky;
+	width: 1300px;
 	background: transparent;
-	padding: 50px 90px 10px;
+	padding: 40px 32px 10px;
 	z-index: 999;
-	transition: 0.3s ease-in-out, -webkit-transform 0.3s;
+	transition: 0.3s ease-in;
 	scroll-behavior: smooth;
 	font-weight: 400;
 	box-sizing: border-box;
+	border-radius: 20px 20px 0 0;
+	background: rgba(255, 255, 255, 0.9);
 	top: 0;
 	img {
 		margin-right: 20px;
@@ -75,14 +76,15 @@ header {
 
 header.active {
 	scroll-behavior: smooth;
-	transform: translateY(-40px);
-	box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
-		rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+	transform: translateY(-10px);
+	// padding: 30px 32px 10px;
+	transition: .3s ease-in;
+	border-radius: 20px 20px 0 0;
+	box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px;
 	transition: -webkit-transform 0.4s;
 	transition: transform 0.3s;
 	transition: transform 0.3s, -webkit-transform 0.3s;
 	&::before {
-		background: rgba(255, 255, 255, 0.9);
 		filter: blur(1px);
 	}
 	.logo {

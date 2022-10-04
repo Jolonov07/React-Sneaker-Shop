@@ -141,8 +141,8 @@ const App = () => {
         setCartItems,
       }}
     >
-      <Header onClickCart={() => setCartOpened(true)} />
       <div className="wrapper clear">
+        <Header onClickCart={() => setCartOpened(true)} />
         {/* <div className="cursor-react" ref={el => cursor = el} ></div> */}
         <Drawer
           items={cartItems}
@@ -164,8 +164,8 @@ const App = () => {
         <Route path="favorites" exact element={ <Favorites />} />
         <Route path="orders" exact element={ <Orders />} />
         </Routes>
+        <Footer />
       </div>
-      <Footer />
     </AppContext.Provider>
   )
 }
